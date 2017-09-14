@@ -1,9 +1,9 @@
 <div class="container">
   <app-header></app-header>
   <div id="responsive-height">
-    <app-search (search)="searchProfiles($event)"></app-search>
-    <app-alert *ngIf="errorMessage" type="danger" title="Oh snap!" [message]="errorMessage"></app-alert>
-    <app-container [feed]="feed" [items]="items"></app-container>
+    <app-alert *ngIf="util.errorMessage" type="danger" title="Oh snap!" [message]="util.errorMessage"></app-alert>
+    <!-- Routed views go here -->
+    <router-outlet></router-outlet>
   </div>
   <app-footer></app-footer>
 </div>

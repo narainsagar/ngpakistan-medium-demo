@@ -1,0 +1,27 @@
+<div class="panel panel-success" *ngIf="feed">
+  <div class="panel-heading">
+    <div class="row">
+      <h2 class="col-sm-6 panel-title">
+        <a [href]="feed?.link" target="__blank">
+          <img class="feed-author-image" [src]="feed?.image" [alt]="feed?.author">
+          {{feed?.title}}
+        </a>
+      </h2>
+      <div class="col-sm-4 col-sm-offset-2">
+        <span class="panel-title text-right">Items Count: {{items?.length}}</span>
+        <div class="btn-group float-right">
+          <a class="btn" [ngClass]="{'btn-primary': sortBy === 'asc', 'btn-info': sortBy !== 'asc'}" (click)="sortBy='asc';">ASC</a>
+          <a class="btn" [ngClass]="{'btn-primary': sortBy === 'desc', 'btn-info': sortBy !== 'desc'}" (click)="sortBy='desc';">DESC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="well" *ngIf="feed.description">{{feed.description}}</div>
+    <div class="row" *ngIf="items && items.length">
+      <div class="col-sm-12" *ngFor="let item of items | sortByDate : sortBy;">
+        <app-article [article]="item" [fullView]="false"></app-article>
+      </div>
+    </div>
+  </div>
+</div>

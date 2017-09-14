@@ -1,12 +1,12 @@
 export const MySocialProfiles = [{
     show: true,
-    title: 'narainsagar.com',
+    title: 'http://narainsagar.com/',
     url: '',
     iconClasses: 'fa fa-link fa-2x'
 }, {
     show: true,
     title: 'medium.com',
-    url: '',
+    url: 'http://blog.narainsagar.com/',
     iconClasses: 'fa fa-medium fa-2x'
 }, {
     show: true,

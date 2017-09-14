@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { LoggerService } from '../shared/logger/logger.service';
-import { FeedService } from '../shared/feed/feed.service';
+import { LoggerService } from '../../shared/services/logger/logger.service';
+import { FeedService } from '../../shared/services/feed/feed.service';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 

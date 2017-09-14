@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
-import { FeedService } from '../shared/feed/feed.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { FeedService } from '../../shared/services/feed/feed.service';
 
 @Component({
   selector: 'app-container',
@@ -10,6 +10,8 @@ export class ContainerComponent implements OnInit {
 
   @Input() items: any[] = [];
   @Input() feed: any = null;
+
+  sortBy = 'asc';
 
   constructor() { }
 
