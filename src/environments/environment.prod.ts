@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  rss2jsonApiKey: `szsgvnqphnbcywzgauzedos31ayndf7vmrcgapyl`
 };
