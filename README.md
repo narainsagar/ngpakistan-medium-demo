@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
+# Talk / Demo
+
+Simple demo for [Medium RSS feeds](https://help.medium.com/hc/en-us/articles/214874118-RSS-feeds) in Angular.
+
+Used [https://rss2json.com/](https://rss2json.com/) to convert rss feed into json.
+
+
+Talk slides are available at [here](https://docs.google.com/presentation/d/1DOL5pfOzwZ0N0cS-HYOGNJBu36ujhHUt5LbVrmhh20A/edit#slide=id.p)
+
+Demo of the talk is available at [here](#)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
