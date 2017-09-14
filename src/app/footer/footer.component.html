@@ -1,0 +1,7 @@
+<nav class="navbar navbar-default" id="footer">
+  <div class="social">
+    <div *ngFor="let profile of socialProfiles;" style="display: inline;">
+      <a *ngIf="profile.show && profile.url" class="social-profile" [ngClass]="profile.iconClasses" [title]="profile.title" target="_blank" [href]="profile.url"></a>
+    </div>
+  </div>
+</nav>

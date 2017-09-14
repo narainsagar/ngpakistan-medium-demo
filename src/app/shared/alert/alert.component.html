@@ -1,0 +1,5 @@
+<div class="alert alert-dismissible alert-{{type}}">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4 *ngIf="title" [innerHTML]="title"></h4>
+  <p *ngIf="message" [innerHTML]="message"></p>
+</div>

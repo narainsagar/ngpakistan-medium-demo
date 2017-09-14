@@ -1,0 +1,12 @@
+<div class="form-group">
+  <!-- <label class="control-label" for="inputLarge">Large input</label> -->
+  <div class="input-group">
+    <input #searchInput class="form-control" type="text" value="@narainsagar" placeholder="Type any medium.com @user or publication"
+      id="inputLarge" (keyup.enter)="fetch(searchInput.value)">
+    <span class="input-group-btn">
+      <button class="btn btn-success" type="button" (click)="fetch(searchInput.value)">
+        <i class="fa fa-search fa-1x"></i>
+      </button>
+    </span>
+  </div>
+</div>

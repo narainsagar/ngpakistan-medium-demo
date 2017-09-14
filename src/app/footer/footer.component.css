@@ -1,0 +1,11 @@
+
+.social-profile {
+    margin: 0 5px 0 5px;
+    color: #18bc9c;
+    text-decoration: none;
+}
+
+.social-profile:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
